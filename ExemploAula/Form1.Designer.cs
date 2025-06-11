@@ -80,6 +80,7 @@
             txtusuario.Name = "txtusuario";
             txtusuario.Size = new Size(100, 23);
             txtusuario.TabIndex = 6;
+            txtusuario.TextChanged += txtusuario_TextChanged;
             // 
             // txtsenha
             // 
