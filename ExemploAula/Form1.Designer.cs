@@ -28,12 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            lbllogin = new Label();
+            lblusuario = new Label();
+            SuspendLayout();
+            // 
+            // lbllogin
+            // 
+            lbllogin.AutoSize = true;
+            lbllogin.Location = new Point(358, 35);
+            lbllogin.Name = "lbllogin";
+            lbllogin.Size = new Size(37, 15);
+            lbllogin.TabIndex = 0;
+            lbllogin.Text = "Login";
+            // 
+            // lblusuario
+            // 
+            lblusuario.AutoSize = true;
+            lblusuario.Location = new Point(174, 100);
+            lblusuario.Name = "lblusuario";
+            lblusuario.RightToLeft = RightToLeft.No;
+            lblusuario.Size = new Size(47, 15);
+            lblusuario.TabIndex = 1;
+            lblusuario.Text = "Usuário";
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(lblusuario);
+            Controls.Add(lbllogin);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label lbllogin;
+        private Label lblusuario;
     }
 }
