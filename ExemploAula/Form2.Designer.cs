@@ -1,6 +1,6 @@
 ﻿namespace ExemploAula
 {
-    partial class frm2
+    partial class frmmenu
     {
         /// <summary>
         /// Required designer variable.
@@ -28,18 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
+            btnvoltar = new Button();
             SuspendLayout();
             // 
-            // frm2
+            // btnvoltar
+            // 
+            btnvoltar.Location = new Point(215, 342);
+            btnvoltar.Name = "btnvoltar";
+            btnvoltar.Size = new Size(369, 23);
+            btnvoltar.TabIndex = 0;
+            btnvoltar.Text = "Voltar a tela de login";
+            btnvoltar.UseVisualStyleBackColor = true;
+            btnvoltar.Click += btnvoltar_Click;
+            // 
+            // frmmenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Name = "frm2";
-            Text = "Form2";
+            Controls.Add(btnvoltar);
+            Name = "frmmenu";
+            Text = "Menu";
             ResumeLayout(false);
         }
 
         #endregion
+
+        private Button btnvoltar;
     }
 }

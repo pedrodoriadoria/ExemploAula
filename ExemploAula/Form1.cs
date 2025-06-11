@@ -13,8 +13,9 @@ namespace ExemploAula
             {
                 MessageBox.Show("Login realizado com sucesso");
                 txtusuario.Clear();
-                frm2 frm2 = new frm2();
-                frm2.Show();
+                Hide();
+                frmmenu frmmenu = new frmmenu();
+                frmmenu.Show();
 
             }
             else
