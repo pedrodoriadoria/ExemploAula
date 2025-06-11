@@ -32,6 +32,7 @@
             lblusuario = new Label();
             lblsenha = new Label();
             btnusuario = new Button();
+            btnsenha = new Button();
             SuspendLayout();
             // 
             // lbllogin
@@ -70,11 +71,20 @@
             btnusuario.TabIndex = 3;
             btnusuario.UseVisualStyleBackColor = true;
             // 
+            // btnsenha
+            // 
+            btnsenha.Location = new Point(397, 153);
+            btnsenha.Name = "btnsenha";
+            btnsenha.Size = new Size(75, 23);
+            btnsenha.TabIndex = 4;
+            btnsenha.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnsenha);
             Controls.Add(btnusuario);
             Controls.Add(lblsenha);
             Controls.Add(lblusuario);
@@ -91,5 +101,6 @@
         private Label lblusuario;
         private Label lblsenha;
         private Button btnusuario;
+        private Button btnsenha;
     }
 }
