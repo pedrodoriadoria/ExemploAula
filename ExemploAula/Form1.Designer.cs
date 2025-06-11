@@ -1,6 +1,6 @@
 ﻿namespace ExemploAula
 {
-    partial class Form1
+    partial class frm1
     {
         /// <summary>
         ///  Required designer variable.
@@ -31,9 +31,9 @@
             lbllogin = new Label();
             lblusuario = new Label();
             lblsenha = new Label();
-            btnusuario = new Button();
-            btnsenha = new Button();
             btnlogar = new Button();
+            txtusuario = new TextBox();
+            txtsenha = new TextBox();
             SuspendLayout();
             // 
             // lbllogin
@@ -64,22 +64,6 @@
             lblsenha.TabIndex = 2;
             lblsenha.Text = "Senha";
             // 
-            // btnusuario
-            // 
-            btnusuario.Location = new Point(397, 100);
-            btnusuario.Name = "btnusuario";
-            btnusuario.Size = new Size(75, 23);
-            btnusuario.TabIndex = 3;
-            btnusuario.UseVisualStyleBackColor = true;
-            // 
-            // btnsenha
-            // 
-            btnsenha.Location = new Point(397, 153);
-            btnsenha.Name = "btnsenha";
-            btnsenha.Size = new Size(75, 23);
-            btnsenha.TabIndex = 4;
-            btnsenha.UseVisualStyleBackColor = true;
-            // 
             // btnlogar
             // 
             btnlogar.Location = new Point(358, 326);
@@ -88,19 +72,35 @@
             btnlogar.TabIndex = 5;
             btnlogar.Text = "Logar";
             btnlogar.UseVisualStyleBackColor = true;
+            btnlogar.Click += btnlogar_Click;
             // 
-            // Form1
+            // txtusuario
+            // 
+            txtusuario.Location = new Point(434, 113);
+            txtusuario.Name = "txtusuario";
+            txtusuario.Size = new Size(100, 23);
+            txtusuario.TabIndex = 6;
+            // 
+            // txtsenha
+            // 
+            txtsenha.Location = new Point(434, 161);
+            txtsenha.Name = "txtsenha";
+            txtsenha.PasswordChar = '*';
+            txtsenha.Size = new Size(100, 23);
+            txtsenha.TabIndex = 7;
+            // 
+            // frm1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(txtsenha);
+            Controls.Add(txtusuario);
             Controls.Add(btnlogar);
-            Controls.Add(btnsenha);
-            Controls.Add(btnusuario);
             Controls.Add(lblsenha);
             Controls.Add(lblusuario);
             Controls.Add(lbllogin);
-            Name = "Form1";
+            Name = "frm1";
             Text = "Form1";
             ResumeLayout(false);
             PerformLayout();
@@ -111,8 +111,8 @@
         private Label lbllogin;
         private Label lblusuario;
         private Label lblsenha;
-        private Button btnusuario;
-        private Button btnsenha;
         private Button btnlogar;
+        private TextBox txtusuario;
+        private TextBox txtsenha;
     }
 }
